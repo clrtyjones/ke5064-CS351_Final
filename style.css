@@ -1,10 +1,11 @@
 body{
     height: 100vh;
     background: linear-gradient(
-        rgb(80, 80, 80),
-        #ffffff
+        rgb(255, 255, 255),
+        rgb(80, 80, 80)
     ) 0 100% no-repeat;
     background-size: 100vh 100;
+    font-family: "Poppins",sans-serif;
 }
 
 /* Style the navigation bar */
@@ -15,10 +16,11 @@ nav {
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 0;
+    top: -100px;
     left: 0;
     right: 0;
-    height: 60px;
+    height: 70px;
+    transition: top 400ms;
   }
   
   /* Style the links in the navigation bar */
@@ -42,14 +44,17 @@ nav {
     font-size: 16px;
     border: none;
     cursor: pointer;
-    padding: 10px 20px;
+    padding: 20px 30px;
     position: fixed;
-    top: 10px;
-    left: 20px;
+    top: -40px;
+    left: 15px;
     z-index: 2;
+    transition: transform 200ms ease-out;
   }
-  
 
+  .toggle-button:hover {
+    transform: translateY(13px);
+  }
 
 
 .body-text{

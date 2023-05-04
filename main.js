@@ -1,6 +1,10 @@
 function toggleNav() {
-    var nav = document.getElementsByTagName("nav")[0];
-    nav.classList.toggle("hidden");
-    var toggleButton = document.getElementsByClassName("toggle-button")[0];
-    toggleButton.classList.toggle("nav-open");
-}  
+    // Bring out the nav menu
+    if(document.getElementById("nav").style.top == "0px") {
+        
+        document.getElementById("nav").style.top ="-120px"
+    }
+    else{
+    document.getElementById("nav").style.top = "0px"
+    }
+}
