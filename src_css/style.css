@@ -1,0 +1,135 @@
+/* Body Styles */
+body {
+  height: 250vh;
+  background: linear-gradient(
+      rgb(255, 255, 255),
+      rgb(80, 80, 80)
+    ) 0 100% no-repeat;
+  background-size: 100vh 100;
+  font-family: "Poppins",sans-serif;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+
+/* NavBar Styles */
+nav {
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: -100px;
+  left: 0;
+  right: 0;
+  height: 70px;
+  transition: top 400ms;
+}
+  
+
+/* NavBar Link Styles */
+nav a {
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  width: 10vw;
+}
+nav a:hover {
+  transition: 1000ms ease-out;
+  background-color: #ddd;
+  color: black;
+  border-radius: 20px;
+  width: 10vw;
+}
+
+
+/* Party Mode Button Styles */
+.prty-click {
+  background-color: #ddd;
+  color: black;
+  border-radius: 20px;
+  width: 10vw;
+  animation: partyEffect 2s 0s infinite;
+}
+@keyframes partyEffect {
+  from {
+    color: #6666ff;
+    transform: translateX(5px);
+  }
+  10% {
+    color: #0099ff;
+    transform: translateX(-5px);
+  }
+  50% {
+    color: #00ff00;
+    transform: translateX(5px);
+  }
+  75% {
+    color: #ff3399;
+    transform: translateX(-5px);
+  }
+  100% {
+    color: #6666ff;
+    transform: translateX(5px);
+  }
+}
+  
+
+/* Toggleable Button Styles */
+.toggle-button {
+  background-color: #333;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  padding: 20px 30px;
+  position: fixed;
+  top: -40px;
+  left: 15px;
+  z-index: 2;
+  transition: transform 200ms ease-out;
+}
+.toggle-button:hover {
+  transform: translateY(13px);
+}
+
+
+/* Body Text Styles*/ 
+.body-text{
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 80px 20px 20px 20px;
+  box-sizing: border-box;
+}
+
+
+/* Rainbow Text Styles */
+.rainbow {
+  text-align: center;
+  width: 100%;
+  max-width: 800px;
+  font-family: "Poppins",sans-serif;
+  animation: rainbowEffect 6s linear 0s infinite;
+}
+@keyframes rainbowEffect {
+  from {
+    color: #6666ff;
+  }
+  10% {
+    color: #0099ff;
+  }
+  50% {
+    color: #00ff00;
+  }
+  75% {
+      olor: #ff3399;
+  }
+  100% {
+    color: #6666ff;
+  }
+}
